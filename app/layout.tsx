@@ -19,8 +19,9 @@ export default function RootLayout({children}: {children: React.ReactNode}){
       <body className={inter.className}>
         <Navbar />
         <main className="max-w-3xl mx-auto py-10">{children}</main>
-        {children}
       </body>
     </html>
+
+    // stop loading in nested layout
   )
 }
