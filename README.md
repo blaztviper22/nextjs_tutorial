@@ -464,6 +464,8 @@ const page = async ({ params }: { params: { id: string } }) => {
           <Image
             src={mapsImg}
             alt='maps'
+            sizes='32vw'
+            // sizes='(max-width:768px) 100vw,(max-width:1200px) 50vw, 33vw' responsive layouts
             width={192}
             height={192}
             className='w-48 h-48 object-cover rounded'
@@ -575,8 +577,8 @@ return (
               src={tour.image}
               alt={tour.name}
               fill
-              sizes='33vw'
-              // sizes='(max-width:768px) 100vw,(max-width:1200px) 50vw, 33vw'
+              //sizes='33vw'
+              sizes='(max-width:768px) 100vw,(max-width:1200px) 50vw, 33vw'
               priority
               className='object-cover rounded'
             />
